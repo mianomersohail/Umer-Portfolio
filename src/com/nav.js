@@ -43,8 +43,9 @@ function Nav() {
             <Link to='/courses' className="mr-5 hover:text-gray-900">Courses</Link>
             <a href="http://localhost:3000/reglogin" className="mr-5 hover:text-gray-900">Regs</a>
             
-            <a href="http://localhost:3000/game" className="mr-5 hover:text-gray-900">Game</a>
+         
             <a href='http://localhost:3000/login' className="mr-5 hover:text-gray-900">Sign In</a>
+            <a href='http://localhost:3000/message' className="mr-5 hover:text-gray-900">Messages</a>
           </nav>
 
           {/* Social media icons */}

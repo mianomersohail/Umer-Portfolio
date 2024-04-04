@@ -1,4 +1,6 @@
+
 const express = require('express');
+
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const multer = require('multer');
@@ -8,6 +10,11 @@ const cors = require('cors');
 
 
 const app = express();
+
+
+
+
+
 const port = 3000;
 app.use(cors());
 // Enable form-data parsing middleware for file uploads
@@ -41,6 +48,7 @@ db.once('open', () => {
 
 // Body parsers should be placed before route definitions
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 // Routes
 const loginRoutes = require('./routes/login');
@@ -50,11 +58,6 @@ const tradingsignal=require('./routes/tradingsignals')
 const crypto=require('./routes/cryptocourse')
 const frontend=require('./routes/frontend')
  const backend=require('./routes/backend')
- const help=require('./routes/help')
- const game=require('./routes/game')
- const pingpong=require('./routes/pingpong')
-const tictac=require('./routes/tictacgame')
-const guess=require('./routes/guess')
 const cv=require('./routes/cv')
 app.use('/login', loginRoutes);
 app.use('/reglogin',reglogin)
@@ -63,12 +66,11 @@ app.use('/tradingsignal',tradingsignal)
 app.use('/cryptocourse',crypto)
 app.use('/frontend',frontend)
 app.use('/backend',backend)
-app.use('/help',help)
-app.use('/game',game)
-app.use('/pingpong',pingpong)
-app.use('/tictacgame',tictac)
-app.use('/guess',guess);
 app.use('/cv',cv);
+
+
+
+
 // Start the serve
 app.listen(port, () => {
    console.log('Server is listening on Port', port);
