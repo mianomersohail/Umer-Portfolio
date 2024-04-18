@@ -45,7 +45,7 @@ function Nav() {
             
          
             <a href='http://localhost:3000/login' className="mr-5 hover:text-gray-900">Sign In</a>
-            <a href='http://localhost:3000/message' className="mr-5 hover:text-gray-900">Messages</a>
+            <a href='http://localhost:3000/message' className="mr-5 hover:text-gray-900"></a>
           </nav>
 
           {/* Social media icons */}

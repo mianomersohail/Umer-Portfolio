@@ -22,7 +22,11 @@ body{
     }
     .d{
         position: relative;
-        bottom:800px;
+        bottom:700px;
+    }
+    .lhr{
+        position: relative;
+        top:350px;
     }
 }
 
