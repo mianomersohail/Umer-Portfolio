@@ -39,7 +39,7 @@ function Home() {
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 d">
-            <img className="object-cover object-center rounded-full" alt="hero" src='https://scontent.flhe13-1.fna.fbcdn.net/v/t39.30808-6/378868324_860756278901093_1659713808052935769_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGA6ELVmJNjc5L0WRYr7nsaCDDZ7YhzllYIMNntiHOWVsWL2we4ZxQMTYdB0PIi4AqtdzjRcGwhR7-j0MzV0Jrj&_nc_ohc=USxuQSxKZU0AX8Z7TY_&_nc_ht=scontent.flhe13-1.fna&oh=00_AfA_UplVaKahxtZI-TsXtkcD_83yWJpiLCOizw6sxpV0Xg&oe=65FDAA8C'></img>
+            <img className="object-cover object-center rounded-full" alt="hero" src='https://scontent.flhe13-1.fna.fbcdn.net/v/t39.30808-6/434033192_976267827349937_7252134059346434320_n.jpg?stp=dst-jpg_p843x403&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEwCGaQ75yiACUAGgXybmH1Cm_eBR2uFM4Kb94FHa4UzkQUi1DTdp25Tg7nAQ6qoac9u40Npe2BVx5i5F6PakCX&_nc_ohc=VirF5fCggoMAb7bA5Y7&_nc_ht=scontent.flhe13-1.fna&oh=00_AfD181FLD9kYvm2Vw3L4DDVNV4lrutjVV0407EBLnyNEAA&oe=662687CC'></img>
           </div>
         </div>
       </section>
