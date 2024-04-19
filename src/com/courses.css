@@ -17,6 +17,9 @@
     color:#333D58;
    
 }
+.none{
+    display: none;
+}
 .boo{
     background-color: #424C68;
     color:white;

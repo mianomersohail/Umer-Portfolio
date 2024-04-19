@@ -65,6 +65,11 @@ function Courses() {
                         <span className='boo'>
                             Bootstrap
                         </span>
+                        
+
+                        <span className='boo'>
+                            React Js
+                        </span>
 
                     </div>
 
@@ -124,19 +129,20 @@ function Courses() {
             </div>
             <div className='grid lg:grid-cols-3 gap-7 mab'>
                 <div className='box one'>
-                    <img src="https://www.piyushgarg.dev/_next/image?url=%2Fimages%2Fdocker.webp&w=384&q=75"></img>
-                    <h1>Docker:containerization for Modern Developement</h1>
-                    <p>Take your Developement next level with</p>
-                    <p>Docker containerization</p>
+                    <img src="https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
+                    <h1>Solidity:Smart Contracts on Eth Blockchain </h1>
+                    <p>Take your Developement next level with Web3</p>
+                    <p>Eth BlockChain</p>
                     <div className='mainboo'>
                         <div className='boo'>
-                            Docker
+                        Solidity
 
                         </div>
-                        <div className='boo'>containerization
+                        <div className='boo'>
+                        Web3
 
                         </div>
-                        <div className='boo'>DevOps
+                        <div className='boo'>Smart Contract
 
                         </div>
 
@@ -145,48 +151,52 @@ function Courses() {
 
                 </div>
                 <div className='box one'>
-                    <img src="https://www.piyushgarg.dev/_next/image?url=%2Fimages%2Fdsa.webp&w=384&q=75"></img>
-                    <p>Data Structure And Algorithems</p>
-                    <p>Master the fundamentals of DSA</p>
+                    <img src="https://images.unsplash.com/photo-1497015289639-54688650d173?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D5"></img>
+                    <p>Interview Prepartions</p>
+                    <p>Complet Interview Qustions</p>
                     <div className='mainboo'>
                         
                         <div className='boo'>
-                            Java
+                            Mern Stack
 
                         </div>
-                        <div className='boo'>Coding
+                        <div className='boo'>Web 3
 
                         </div>
-                        <div className='boo'>Programming
+                        <div className='boo'>Forex Currencies
 
                         </div>
-                        <div className='boo'>DSA</div>
+                        <div className='boo'>CryptoCurriences</div>
 
                     </div>
 
                 </div>
-                <div className='box one'>
-                    <img src="https://www.piyushgarg.dev/_next/image?url=%2Fimages%2Flinear-dsa.webp&w=384&q=75"></img>
-                    <p>Master Linear Data Structure</p>
-                    <p>Complete Guide and Hands On Tutorials On Linear Data Structure </p>
+                <div className='box one '>
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2318581837/display_1500/stock-photo-june-brazil-in-this-photo-illustration-the-mongodb-logo-is-displayed-on-a-smartphone-2318581837.jpg"></img>
+                    <p>MONGO DB</p>
+                    <p>Complete mongodb Data Base </p>
                     <div className='mainboo'>
                         <div className='boo'>
-                            Java
+                            Data Base
 
                         </div>
-                        <div className='boo'>Coding
+                        <div className='boo'>Crud Operations
 
                         </div>
-                        <div className='boo'>Programming
+                        <div className='boo'>image Upload
 
                         </div>
+
+                        <div className='boo'>Free and Paid versions
+
+</div>
 
                     </div>
 
                 </div>
 
             </div>
-            <div className='grid lg:grid-cols-3 mab gap-7'>
+            <div className='grid lg:grid-cols-3 mab gap-7 none'>
                 <div className='box one'>
                     <img src="https://www.piyushgarg.dev/_next/image?url=%2Fimages%2Fnon-linear-dsa.webp&w=384&q=75"></img>
                     <p>Master Non Linear Data Structure</p>
