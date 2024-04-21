@@ -183,7 +183,7 @@ function Courses() {
                         <div className='boo'>Crud Operations
 
                         </div>
-                        <div className='boo'>image Upload
+                        <div className='boo'>Schemas
 
                         </div>
 
@@ -196,21 +196,21 @@ function Courses() {
                 </div>
 
             </div>
-            <div className='grid lg:grid-cols-3 mab gap-7 none'>
+            <div className='grid lg:grid-cols-3 mab gap-7 '>
                 <div className='box one'>
-                    <img src="https://www.piyushgarg.dev/_next/image?url=%2Fimages%2Fnon-linear-dsa.webp&w=384&q=75"></img>
-                    <p>Master Non Linear Data Structure</p>
-                    <p>complete Guid And Hands On Tutorials on </p>
-                    <p>Non Linear Data Sturcture</p>
+                    <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/07/git-github.png"></img>
+                    <p>Version Controls</p>
+                    <p>Git & Github </p>
+                    <p>Keepo Track of your code</p>
                     <div className='mainboo'>
-                        <div className='boo'>Java
+                        <div className='boo'>Git
 
                         </div>
-                        <div className='boo'>Coding
+                        <div className='boo'>Git Hub
 
                         </div>
-                        <div className='boo'>Programming</div>
-                        <div className='boo'>DSA
+                        <div className='boo'>Version Controls</div>
+                        <div className='boo'>Upload website on github pages
 
                         </div>
 
@@ -225,12 +225,19 @@ function Courses() {
                         <div className='boo'>React
 
                         </div>
-                        <div className='boo'>WebDev
+                        <div className='boo'>Vertual Dom
 
                         </div>
-                        <div className='boo'>FrontEnd</div>
+                        <div className='boo'>Props</div>
+                        <div className='boo'>States
+
+                        </div>
+                        <div className='boo'>Hooks etc
+
+                        </div>
 
                     </div>
+                    
 
                 </div>
 

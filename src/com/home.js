@@ -28,7 +28,7 @@ function Home() {
 
             </h1>
             <p className="mb-8 leading-relaxed n">Fullstack Developer & Instructor.</p>
-            <p className="mb-8 leading-relaxed n">Hi there! My name is Umer Sohail  and I’m a software engineer with over 5 years of experience in the industry. I love all things tech and coding, and on my channel, I share my knowledge and experience with others.</p>
+            <p className="mb-8 leading-relaxed n">Hi there! My name is Umer Sohail  and I’m a software engineer with over 2 years of experience in the industry. I love all things tech and coding, and on my channel, I share my knowledge and experience with others.</p>
 
             <div className="flex justify-center ">
               <form action='http://localhost:3000/cv' >
