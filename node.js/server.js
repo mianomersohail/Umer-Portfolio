@@ -13,9 +13,10 @@ const app = express();
 
 
 
+require('dotenv').config();
 
 
-const port = 3000;
+const port = process.env.port || 3000
 app.use(cors());
 // Enable form-data parsing middleware for file uploads
 app.use(upload.none());
