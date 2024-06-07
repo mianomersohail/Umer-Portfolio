@@ -54,7 +54,7 @@ function Nav() {
           <Link to="/home" className="mr-5 hover:text-gray-900">Home</Link>
           <Link to='/courses' className="mr-5 hover:text-gray-900">Courses</Link>
           <a href="http://localhost:3000/reglogin" className="mr-5 hover:text-gray-900">Regs</a>
-          <a href='http://localhost:3000/login' className="mr-5 hover:text-gray-900">Sign In</a>
+          <a href='https://vercel-chi-six-12.vercel.app/data' className="mr-5 hover:text-gray-900">Sign In</a>
           <a href='http://localhost:3000/message' className="mr-5 hover:text-gray-900"></a>
         </nav>
 
