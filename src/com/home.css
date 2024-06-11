@@ -1,32 +1,45 @@
-.umersohail{
-    color:white;
-    font-size:32px ;
+.home{
+    margin-top: 189px;
 }
-.c{
-    color:#01D293;
-}
-body{
-    color:white;
-}
-.n{
-    color:white;
-}
-.hk:hover{
-    background-color: antiquewhite;
-    color:#01D293;
-}
-@media screen and (max-width:767px) {
-    
-    .fff{
-        margin-top: 390px;
-    }
-    .d{
-        position: relative;
-        bottom:700px;
-    }
-    .lhr{
-        position: relative;
-        top:350px;
-    }
+.img-round {
+    border: solid;
+    border-radius: 50%;
+    height: 100%;
+    width: 90%;
+    transition: transform 0.3s ease;
 }
 
+.img-round:hover {
+    transform: scale(1.1);
+}
+
+body{
+    background-color: #0E1630;
+}
+.youtube-btn{
+    border:solid;
+    margin-top: 43px;
+    width:auto;
+    padding:12px;
+    height:auto;
+    border:solid;
+    border-radius: 32px;
+    font-size: 22px;
+}
+.fa-youtube-play{
+    font-size: 22px;
+    color:red;
+}
+@media screen and (max-width:768px) {
+    .img-round{
+        height:50%;
+        width:50%;
+        
+    }
+    .home-row{
+        flex-direction: column-reverse;
+        
+    }
+  
+    
+}

@@ -1,16 +1,13 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Nav from './com/nav.js';
+import './App.css'
 import Home from './com/home.js';
 import Courses from './com/courses.js';
-import Footer from './com/footer.js';
+import Projects from './com/projects.js';
+// import Footer from './com/footer.js';
 
 function App() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+ 
 
   return (
     <>
@@ -26,14 +23,14 @@ function App() {
             element={<Home />}
           />
           <Route
-            path="/courses"
-            element={<Courses />}
-            onClick={scrollToTop}
+            path="/projects"
+            element={<Projects />}
+         
           />
           <Route
-            path="/contact"
-            element={<Footer />}
-            onClick={scrollToTop}
+            path="/courses"
+            element={<Courses />}
+       
           />
         </Routes>
       </Router>

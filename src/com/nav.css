@@ -1,25 +1,9 @@
-.nav a:hover{
+.navcolor{
     color:#01D293;
-
 }
-.nav a{
-    color:white;
-    
+.header{
+    background-color: black;
 }
-.x{
-    margin:23px;
-}
-.fp{
-    background-color: #0E1630;
-}
-.fp:hover{
-    background-color: #0E1630;
-}
-
-@media screen and (max-width:768px)and (min-width:1024px) {
-    .x{
-        display: none;
-    }
-  
-    
+.navbar-brand{
+    font-size: 32px;
 }

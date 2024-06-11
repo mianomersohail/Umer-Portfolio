@@ -1,83 +1,61 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faYoutube, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 import './nav.css';
 
 function Nav() {
-  const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 100) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
-  }, []);
 
-  const getColorStyles = () => {
-    return {
-      color: '#01D293',
-    };
-  };
-
-  return (
-    <header className={`text-gray-600 body-font navss ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link to="/home" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <div className="ml-3 text-xl umersohail">
-            <span style={getColorStyles()}>U</span>MER <span style={getColorStyles()}>S</span>OHAIL
-          </div>
-        </Link>
-
-        {/* Hamburger menu icon for small screens */}
-        <button
-          x-data="{ open: false }"
-          onClick={() => (document.getElementById('nav-menu').style.display = 'block')}
-          className="md:hidden bg-gray-200 p-2 rounded"
-        >
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" className="w-6 h-6">
-            <path d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-
-        {/* Navigation menu for large screens */}
-        <nav className="hidden md:flex md:ml-auto md:items-center md:w-auto nav" id="nav-menu">
-          <Link to="/home" className="mr-5 hover:text-gray-900">Home</Link>
-          <Link to='/courses' className="mr-5 hover:text-gray-900">Courses</Link>
-          <a href="http://localhost:3000/reglogin" className="mr-5 hover:text-gray-900">Regs</a>
-          <a href='https://vercel-chi-six-12.vercel.app/data' className="mr-5 hover:text-gray-900">Sign In</a>
-          <a href='http://localhost:3000/message' className="mr-5 hover:text-gray-900"></a>
-        </nav>
-
-        {/* Social media icons */}
-        <div className="fp inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          <div className='fp'>
-            <a className='x' href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faYoutube} size="2x" style={{ color: 'red' }} />
-            </a>
-            <a className='x' href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: '#1877f2' }} />
-            </a>
-            <a className='x' href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" style={{ color: '#0077b5' }} />
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} size="2x" style={{ color: 'black' }} />
-            </a>
-          </div>
-        </div>
+    return (
+        <>
+        <header>
+           <nav class="navbar bg-body-tertiary fixed-top " data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span className='navcolor'>M</span>IAN<span className='navcolor'>O</span>MER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WELCOME</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </header>
-  );
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <Link to="/home" class="nav-link active" aria-current="page" href="#">Home</Link>
+          </li>
+          <li class="nav-item">
+            <Link to="/projects" class="nav-link" href="#">Projects</Link>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><Link to="/courses" class="dropdown-item" href="#">Courses</Link></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li>
+                <hr class="dropdown-divider"/>
+              </li>
+              <li><a class="dropdown-item" href="#">Contact Me</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+        </>
+    );
 }
 
 export default Nav;
