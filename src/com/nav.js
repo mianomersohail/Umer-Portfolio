@@ -53,7 +53,7 @@ function Nav() {
               <li>
                 <hr class="dropdown-divider"/>
               </li>
-              <li><a class="dropdown-item" href="#">Contact Me</a></li>
+              <li><Link to="/contact" class="dropdown-item" href="#">Contact Me</Link></li>
             </ul>
           </li>
         </ul>

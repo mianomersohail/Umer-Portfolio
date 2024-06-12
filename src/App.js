@@ -4,6 +4,7 @@ import './App.css'
 import Home from './com/home.js';
 import Resume from './com/resume.js';
 import Project from './com/project.js';
+import Contact from './com/contact.js';
 // import Footer from './com/footer.js';
 
 function App() {
@@ -30,6 +31,11 @@ function App() {
           <Route
             path="/projects"
           element={<Project/>}       
+          />
+
+<Route
+            path="/contact"
+          element={<Contact/>}       
           />
         </Routes>
       </Router>

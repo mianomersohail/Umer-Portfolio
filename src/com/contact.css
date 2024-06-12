@@ -1,0 +1,45 @@
+.contact{
+    margin-top: 150px;
+}
+.contact-input{
+    width:200px;
+    height:40px;
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 12px;
+    background-color:#F3F3F3 ;
+    color:black;
+    padding: 4px;
+
+}
+textarea{
+    margin-top: 32px;
+    background-color: #F3F3F3;
+    padding:10px;
+
+}
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-re{
+    border: solid; /* You can specify the border width and color if needed, e.g., border: 2px solid #000; */
+        height: 130px;
+        width: 130px; /* For a perfect circle, width and height should be equal */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: 32px;
+        font-size: 22px;
+        background-color: #EEA302;
+        color:black;
+    
+      
+}
+.contact-re:hover{
+    background-color: white;
+    color:black;
+}
