@@ -10,7 +10,7 @@ function Project(){
                 
                 <div className="col-md-5 project-box">
                     <h2>Madrisah Project</h2>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <p>That was my great Project with some great Memories with complete Customer Satisfaction Project Feature you can see in my video .</p>
                 </div>
 
                 <div className='col-md-5 project-box offset-md-1'>
@@ -20,8 +20,12 @@ function Project(){
 
 
                 <div className="col-md-5 project-box">
-                    <h2>Madrisah Project</h2>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <h2>Web 3 Project</h2>
+                    <p>This was my new Experience of blockchain were i solve some complex logics for two parties to make their Deals in a Decentralized Way 
+                        the blochain use was Eth BlockChain and the Language use in this was Solidity wit eth.js Liabrary to Interact with Block-Chain
+
+
+                    </p>
                 </div>
 
                 <div className='col-md-5 project-box offset-md-1'>
@@ -33,8 +37,10 @@ function Project(){
 
 
                 <div className="col-md-5 project-box">
-                    <h2>Madrisah Project</h2>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <h2>Mobile Shop Project</h2>
+                    <p>Project for Mobile Shop to Track their Orders also customer Online Shopping and their feedback
+                        
+                        .</p>
                 </div>
 
                 <div className='col-md-5 project-box offset-md-1'>
