@@ -45,7 +45,7 @@ textarea{
 }
 @media screen and (max-width:768px) {
     .contact-input{
-        width:100%;
+        width:70%;
     }
     
 }
