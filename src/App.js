@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route
             path="/Umer-Portfolio"
-            element={''}
+            element={<Home/>}
           />
           <Route
             path="/home"
