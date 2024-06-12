@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Nav from './com/nav.js';
 import './App.css'
 import Home from './com/home.js';
-import Courses from './com/courses.js';
-import Projects from './com/projects.js';
+import Resume from './com/resume.js';
+import Project from './com/project.js';
 // import Footer from './com/footer.js';
 
 function App() {
@@ -16,21 +16,20 @@ function App() {
         <Routes>
           <Route
             path="/Umer-Portfolio"
-            element={<Home />}
+            element={''}
           />
           <Route
             path="/home"
-            element={<Home />}
+            element={<Home/>}
           />
           <Route
-            path="/projects"
-            element={<Projects />}
+            path="/resume"
+            element={<Resume/>}
          
           />
           <Route
-            path="/courses"
-            element={<Courses />}
-       
+            path="/projects"
+          element={<Project/>}       
           />
         </Routes>
       </Router>

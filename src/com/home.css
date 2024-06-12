@@ -1,45 +1,78 @@
-.home{
-    margin-top: 189px;
-}
-.img-round {
-    border: solid;
+.home-img{
+    width:100%;
+    border:solid;
     border-radius: 50%;
-    height: 100%;
-    width: 90%;
-    transition: transform 0.3s ease;
+}
+.home{
+    margin-top: 100px;
+}
+.home-re-flex{
+    display: flex;
+
 }
 
-.img-round:hover {
-    transform: scale(1.1);
+    .home-re {
+        border: solid; /* You can specify the border width and color if needed, e.g., border: 2px solid #000; */
+        height: 130px;
+        width: 130px; /* For a perfect circle, width and height should be equal */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: 32px;
+        font-size: 22px;
+      
+
+        }
+    .home-re-one{
+        background-color: #EEA302;
+        border-color: #EEA302;
+    }
+.home-re-one:hover{
+    background-color: white;
+    border-color: black;
+}
+.home-re-two{
+background-color: #FF3B25;
+border-color: #FF3B25;
+}
+.home-re-two:hover{
+    background-color: white;
+    border-color: black;
+}
+.home-re-three{
+    background-color: #80D8DA;
+    border-color: #80D8DA;
 }
 
+.home-re-three:hover{
+    background-color: white;
+    border-color:black;
+
+}
 body{
-    background-color: #0E1630;
+    background-color:#F3F3F3 ;
 }
-.youtube-btn{
-    border:solid;
-    margin-top: 43px;
-    width:auto;
-    padding:12px;
-    height:auto;
-    border:solid;
-    border-radius: 32px;
-    font-size: 22px;
+.home-two-box{
+    padding-left: 32px;
 }
-.fa-youtube-play{
-    font-size: 22px;
-    color:red;
+.homelink{
+    text-decoration: none;
+    color:black;
 }
 @media screen and (max-width:768px) {
-    .img-round{
-        height:50%;
-        width:50%;
+    .row-home{
         
-    }
-    .home-row{
         flex-direction: column-reverse;
-        
     }
-  
+    .home-img{
+        margin-top: 75px;
+    }
+    .home-re{
+        width:90px;
+        height:90px;
+        margin-left: 5px;
+    }
     
 }

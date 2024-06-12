@@ -2,8 +2,25 @@
     color:#01D293;
 }
 .header{
-    background-color: black;
+    background-color:#F3F3F3;
 }
 .navbar-brand{
-    font-size: 32px;
+    font-size: 22px;
+}
+.name-round{
+
+        height: 14px;
+        width: 13px;
+        background-color: #EEA302;
+        color: #EEA302; /* This is not necessary for the dot, as it doesn't contain text */
+        border: solid;
+        border-radius: 50%;
+   
+    
+}
+.nav-flexs{
+    display: flex;
+}
+.nav-web{
+   color:#01D293;
 }

@@ -1,0 +1,29 @@
+.resume{
+    margin-top: 160px;
+}
+.resume-size{
+    font-size: 43px;
+    font-weight: bold;
+}
+.resume-row{
+    margin-top: 80px;
+}
+.resume-edt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+.resume-top{
+    display: inline-block;
+    margin-top: 70px;
+}
+.resume-box{
+    display: inline-block;
+    margin-top: 45px;
+}
+body{
+    background-color: #F3F3F3 ;
+}
+.resume-skills{
+    margin-top: 32px;
+}

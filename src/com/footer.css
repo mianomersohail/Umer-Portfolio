@@ -1,0 +1,13 @@
+i{
+    margin-left: 12px;
+}
+.footer{
+    margin-top: 106px;
+    background-color: #F3F3F3 ;
+}
+@media  screen and (max-width:768px) {
+    .footer{
+        padding-left: 22px;
+    }
+    
+}

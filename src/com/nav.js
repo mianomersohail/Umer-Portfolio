@@ -12,9 +12,21 @@ function Nav() {
     return (
         <>
         <header>
-           <nav class="navbar bg-body-tertiary fixed-top " data-bs-theme="dark">
+           <nav class="navbar bg-body-tertiary fixed-top " >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><span className='navcolor'>M</span>IAN<span className='navcolor'>O</span>MER</a>
+    <a class="navbar-brand" href="#">
+      <div className='nav-flexs'>
+        <div className='name-round'></div>
+        <h1>MIAN OMER</h1>
+        <div className="nav-web">
+        <p>Web Dev</p>
+
+        </div>
+      
+
+      </div>
+      
+      </a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,7 +48,7 @@ function Nav() {
               More
             </a>
             <ul class="dropdown-menu">
-              <li><Link to="/courses" class="dropdown-item" href="#">Courses</Link></li>
+              <li><Link to="/resume" class="dropdown-item" href="#">Resume</Link></li>
               <li><a class="dropdown-item" href="#">Login</a></li>
               <li>
                 <hr class="dropdown-divider"/>
