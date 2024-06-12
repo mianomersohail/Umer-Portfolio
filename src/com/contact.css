@@ -43,3 +43,9 @@ textarea{
     background-color: white;
     color:black;
 }
+@media screen and (max-width:768px) {
+    .contact-input{
+        width:100%;
+    }
+    
+}
