@@ -2,7 +2,7 @@ import './home.css'
 import Footer from './footer'
 import {Link} from 'react-router-dom'
 import Msgs from './msgs'
-import Umer from './umer'
+
 function Home(){
     return(
         <>
@@ -23,7 +23,7 @@ function Home(){
             </div>
 
         </div>
-        <Umer/>
+        
         <Msgs/>
         <Footer/>
         </>
