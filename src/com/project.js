@@ -9,7 +9,7 @@ function Project(){
             <div className="row"> 
                 
                 <div className="col-md-5 project-box">
-                    <h2>Madrisah Project</h2>
+                    <h2 className="project-font">Madrisah Project</h2>
                     <p>That was my great Project with some great Memories with complete Customer Satisfaction Project Feature you can see in my video.</p>
                 </div>
                 <div className='col-md-5 project-box offset-md-1'>
@@ -19,7 +19,7 @@ function Project(){
                 </div>
 
                 <div className="col-md-5 project-box">
-                    <h2>Web 3 Project</h2>
+                    <h2 className="project-font">Web 3 Project</h2>
                     <p>This was my new Experience of blockchain where I solved some complex logics for two parties to make their deals in a decentralized way. The blockchain used was Eth BlockChain and the language used was Solidity with eth.js library to interact with the blockchain.</p>
                 </div>
                 <div className='col-md-5 project-box offset-md-1'>
@@ -29,7 +29,7 @@ function Project(){
                 </div>
 
                 <div className="col-md-5 project-box">
-                    <h2>Mian Real State Project</h2>
+                    <h2 className="project-font">Mian Real State Project</h2>
                     <p>Project for Mian Real State one of the Common and most popular name in pakistan Real Estate Industry.</p>
                 </div>
                 <div className='col-md-5 project-box offset-md-1'>

@@ -2,6 +2,7 @@ import './home.css'
 import Footer from './footer'
 import {Link} from 'react-router-dom'
 import Msgs from './msgs'
+import Umer from './umer'
 function Home(){
     return(
         <>
@@ -13,15 +14,16 @@ function Home(){
                 </div>
 
                 <div className='col-md-5 home-two-box' >
-                    <h1 style={{fontSize:"95px"}}>Hello</h1>
-                    <p style={{fontSize:"23px",fontWeight:"bolder"}}>A Bit About Me</p>
-                    <p>Hi there! My name is Omer and I’m a software engineer with over 2 years of experience in the industry. I love all things tech and coding, and on my channel, I share my knowledge and experience with others.</p>
+                    <h1 className='home-helo'>Hello</h1>
+                    <p style={{fontSize:"23px",fontWeight:"bolder",fontFamily:"Pacifico"}}>A Bit About Me</p>
+                    <p style={{fontFamily:'Gwendolyn'}}> Hi there! My name is Omer and I’m a software engineer with over 2 years of experience in the industry. I love all things tech and coding, and on my channel, I share my knowledge and experience with others.</p>
                     <div className='home-re-flex'> <div  className="home-re home-re-one" ><Link to="/resume" className='homelink'> Resume</Link></div><div className="home-re home-re-two"><Link to="/projects" className='homelink' > Project</Link></div><div className="home-re home-re-three"><Link to="/contact" className='homelink'>Contact</Link></div></div>
                 </div>
 
             </div>
 
         </div>
+        <Umer/>
         <Msgs/>
         <Footer/>
         </>

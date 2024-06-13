@@ -17,9 +17,9 @@ function Nav() {
     <a class="navbar-brand" href="#">
       <div className='nav-flexs'>
         <div className='name-round'></div>
-        <h1>MIAN OMER</h1>
+        <h1 className='nav-omer'>MIAN OMER</h1>
         <div className="nav-web">
-        <p>Web Dev</p>
+        <p className='nav-omer'>Web Dev</p>
 
         </div>
       

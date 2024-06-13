@@ -8,6 +8,16 @@ i{
 @media  screen and (max-width:768px) {
     .footer{
         padding-left: 22px;
+        margin-top: 50px;
+ 
+        
     }
-    
+    .footer-row{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .footer i{
+        margin-left: 4px;
+    }
 }

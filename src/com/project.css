@@ -26,3 +26,17 @@
     height: 100%;
     border: 0;
 }
+.project-font{
+    font-family: 'Leckerli One';
+}
+
+@media  screen and (max-width:768px) {
+    .project-box{
+        margin-top: 30px;
+        font-family: 'DM Serif Display'
+    }
+    .project{
+        margin-top: 100px;
+    }
+    
+}

@@ -3,8 +3,8 @@ function Footer(){
     return (
         <>
         <div className="container-fluid footer">
-            <div className="row">
-                <div className="col-md-3">
+            <div className="row footer-row">
+                <div className="col-md-3 ">
                     <h1>Phone </h1>
                     <p>+92-316-3865-813</p>
 
