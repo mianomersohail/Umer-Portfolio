@@ -13,24 +13,27 @@ function Msgs() {
         socket.on('connect', () => {
             console.log('Connected to server');
         });
-
         socket.on('disconnect', () => {
             console.log('Disconnected from server');
         });
-
         socket.on('server-message', (data) => {
             const receivedMessages = data.map(msg => ({
+                id: msg.id,
                 text: msg.message,
                 sender: 'Server',
                 timestamp: msg.timestamp
             }));
-            setMessages(prevMessages => [
-                ...prevMessages.filter((msg) => !receivedMessages.some(received => msg.text === received.text)),
-                ...receivedMessages
-            ]);
-        });
 
-        scrollToBottom();
+            setMessages(prevMessages => {
+                const newMessages = prevMessages.slice(); // Create a shallow copy of prevMessages
+                receivedMessages.forEach(msg => {
+                    if (!prevMessages.some(m => m.id === msg.id)) {
+                        newMessages.push(msg);
+                    }
+                });
+                return newMessages;
+            });
+        });
 
         return () => {
             socket.off('connect');
@@ -38,21 +41,29 @@ function Msgs() {
             socket.off('server-message');
         };
     }, []);
-
     useEffect(() => {
         fetch('http://localhost:3000/mesg')
             .then(res => res.json())
             .then(meg => {
                 const receivedMessages = meg.map(msg => ({
+                    id: msg.id,
                     text: msg.message,
-                    sender: 'Server',
+                    sender: 'Server',  
                     timestamp: msg.timestamp
                 }));
-                setMessages(prevMessages => [...prevMessages, ...receivedMessages]);
-                scrollToBottom();
+
+                setMessages(prevMessages => {
+                    const newMessages = prevMessages.slice(); // Create a shallow copy of prevMessages
+                    receivedMessages.forEach(msg => {
+                        if (!prevMessages.some(m => m.id === msg.id)) {
+                            newMessages.push(msg);
+                        }
+                    });
+                    return newMessages;
+                });
             })
             .catch(error => {
-                console.log(error)
+                console.error(error);
             });
     }, []);
 
@@ -60,17 +71,13 @@ function Msgs() {
         scrollToBottom();
     }, [messages]);
 
-    const isValidDate = (timestamp) => {
-        return timestamp && !isNaN(new Date(timestamp).getTime());
-    };
-
     const handleSend = (e) => {
         e.preventDefault();
         if (input.trim()) {
             socket.emit('user-message', input);
             setMessages(prevMessages => [
                 ...prevMessages,
-                { text: input, sender: 'You', timestamp: Date.now() }
+                { id: Date.now(), text: input, sender: 'You', timestamp: Date.now() }
             ]);
             setInput('');
             scrollToBottom();
@@ -78,7 +85,11 @@ function Msgs() {
     };
 
     const scrollToBottom = () => {
-        messagesEndRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+        messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const isValidDate = (timestamp) => {
+        return timestamp && !isNaN(new Date(timestamp).getTime());
     };
 
     return (

@@ -2,6 +2,7 @@ import './project.css'
 import Footer from './footer'
 
 function Project(){
+    
     return(
         <>
         <div className="container project">
